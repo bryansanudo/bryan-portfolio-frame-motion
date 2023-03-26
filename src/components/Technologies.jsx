@@ -7,7 +7,7 @@ import TechnologieCard from "@/components/TechnologieCard";
 import Section from "@/components/common/Section";
 
 const Technologies = () => {
-  const [active, setActive] = useState("world-2");
+  const [active, setActive] = useState("tec-2");
 
   const tecs = [
     {

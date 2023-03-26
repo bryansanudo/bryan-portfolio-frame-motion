@@ -51,7 +51,7 @@ const Hero = () => {
       </p>
 
       <motion.div
-        variants={fadeIn("right", "tween", 0.2, 1)}
+        variants={fadeIn("right", "tween", 0.5, 1)}
         className="flex justify-evenly py-8 lg:py-16 text-3xl w-full md:w-1/3"
       >
         {SOCIAL.map(({ id, link, icon }) => (

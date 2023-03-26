@@ -41,7 +41,8 @@ const Contact = () => {
         <div className="flex flex-col items-center justify-center gap-8 text-center">
           <div className="flex w-full items-center justify-evenly text-3xl">
             {SOCIAL.map(({ id, link, icon }) => (
-              <a
+              <motion.a
+                variants={fadeIn("up", "tween", id * 0.5, 1)}
                 key={id}
                 href={link}
                 target="_blank"
@@ -49,16 +50,13 @@ const Contact = () => {
                 className="duartion-200 ease-in-out hover:text-rose-600"
               >
                 {icon}
-              </a>
+              </motion.a>
             ))}
           </div>
 
           <div className="p-8 text-left w-[500px]">
             <form action="" method="POST">
-              <motion.div
-                variants={zoomIn(0.8, 1.5)}
-                className="flex flex-col gap-2 w-full "
-              >
+              <div className="flex flex-col gap-2 w-full ">
                 <div className="flex flex-col">
                   <label className="capitalize text-sm py-2 font-extralight">
                     name
@@ -99,7 +97,7 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white resize-none"
                   ></textarea>
                 </div>
-              </motion.div>
+              </div>
 
               <div className="flex items-center justify-center">
                 <button className="my-8 bg-gradient-to-r from-rose-600 to-teal-500 text-white px-6 py-3  rounded-md tracking-wider cursor-pointer hover:scale-105 duration-200 uppercase">

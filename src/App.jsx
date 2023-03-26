@@ -6,6 +6,7 @@ import Portfolio from "@/components/Portfolio";
 
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Technologies from "@/components/Technologies";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -18,7 +19,7 @@ function App() {
         <Hero />
 
         <Portfolio />
-
+        <Technologies />
         <Contact />
         <Footer />
       </main>

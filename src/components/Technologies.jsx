@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-import styles from "@/utils/styles";
 import { staggerContainer } from "@/utils/motion";
-import { TitleText, TypingText } from "@/components/CustomTexts";
 
 import TechnologieCard from "@/components/TechnologieCard";
 import Section from "@/components/common/Section";
@@ -74,7 +72,7 @@ const Technologies = () => {
         title="Portfolio"
         subtitle="These are all the projects that I have worked on. Some of them I have worked before I gained some experience. So go gentle on them."
       >
-        <div className=" grid gap-10  lg:grid-cols-5  bg-red-500">
+        <div className=" grid grid-cols-2 gap-5  lg:grid-cols-5 ">
           {tecs.map((world, index) => (
             <TechnologieCard
               key={world.id}

@@ -34,7 +34,7 @@ const Contact = () => {
       viewport={{ once: false, amount: 0.25 }}
     >
       <Section
-        title="Contact📩"
+        title="Contact"
         subtitle=" I am open to talk regardin freelancing or full-time opportunities.
         Feel Free to contact me using your preferred medium :)"
       >
@@ -111,7 +111,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center justify-center">
-                <button className="my-8 bg-gradient-to-r from-rose-600 to-teal-500 text-white px-6 py-3  rounded-md tracking-wider cursor-pointer hover:scale-105 duration-200 uppercase">
+                <button className="my-8 bg-gradient-to-r from-[#29A52D] to-[#5C24B3] text-white px-6 py-3  rounded-md tracking-wider cursor-pointer hover:scale-105 duration-200 uppercase">
                   send message
                 </button>
               </div>

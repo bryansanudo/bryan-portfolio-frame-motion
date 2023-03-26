@@ -128,7 +128,7 @@ const Board = () => {
     <>
       <div className="relative  flex items-center ">
         <div className="mx-auto flex flex-col justify-center items-center">
-          <div className="grid md:grid-cols-4 grid-cols-3 justify-center items-center mb-10 gap-4">
+          <div className="grid md:grid-cols-4 grid-cols-3 justify-center items-center mb-10 gap-6">
             {cards.map((card) => (
               <Card
                 card={card}

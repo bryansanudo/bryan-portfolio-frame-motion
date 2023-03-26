@@ -39,10 +39,12 @@ const Contact = () => {
         Feel Free to contact me using your preferred medium :)"
       >
         <div className="flex flex-col items-center justify-center gap-8 text-center">
-          <div className="flex w-full items-center justify-evenly text-3xl">
+          <motion.div
+            variants={fadeIn("right", "tween", 0.5, 1)}
+            className="flex w-full items-center justify-evenly text-3xl"
+          >
             {SOCIAL.map(({ id, link, icon }) => (
-              <motion.a
-                variants={fadeIn("up", "tween", id * 0.5, 1)}
+              <a
                 key={id}
                 href={link}
                 target="_blank"
@@ -50,14 +52,17 @@ const Contact = () => {
                 className="duartion-200 ease-in-out hover:text-rose-600"
               >
                 {icon}
-              </motion.a>
+              </a>
             ))}
-          </div>
+          </motion.div>
 
-          <div className="p-8 text-left w-[500px]">
+          <div className="p-8 text-left md:w-[500px] w-[300px]">
             <form action="" method="POST">
               <div className="flex flex-col gap-2 w-full ">
-                <div className="flex flex-col">
+                <motion.div
+                  className="flex flex-col"
+                  variants={zoomIn(0.5, 1.5)}
+                >
                   <label className="capitalize text-sm py-2 font-extralight">
                     name
                   </label>
@@ -66,8 +71,8 @@ const Contact = () => {
                     name="name"
                     className="border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white"
                   />
-                </div>
-                <div className="flex flex-col">
+                </motion.div>
+                <motion.div className="flex flex-col" variants={zoomIn(1, 1.5)}>
                   <label className="capitalize text-sm py-2 font-extralight">
                     phone
                   </label>
@@ -76,8 +81,11 @@ const Contact = () => {
                     name="phone"
                     className="border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white"
                   />
-                </div>
-                <div className="flex flex-col">
+                </motion.div>
+                <motion.div
+                  className="flex flex-col"
+                  variants={zoomIn(1.5, 1.5)}
+                >
                   <label className="capitalize text-sm py-2 font-extralight">
                     email
                   </label>
@@ -86,8 +94,11 @@ const Contact = () => {
                     name="email"
                     className="border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white"
                   />
-                </div>
-                <div className="flex flex-col">
+                </motion.div>
+                <motion.div
+                  className="flex flex-col"
+                  variants={zoomIn(2.0, 1.5)}
+                >
                   <label className="capitalize text-sm py-2 font-extralight">
                     message
                   </label>
@@ -96,7 +107,7 @@ const Contact = () => {
                     rows="4"
                     className="border-2 rounded-lg p-3 flex focus:outline-none border-gray-400 dark:bg-gray-900 dark:text-white resize-none"
                   ></textarea>
-                </div>
+                </motion.div>
               </div>
 
               <div className="flex items-center justify-center">

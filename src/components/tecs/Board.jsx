@@ -1,55 +1,38 @@
 import React, { useEffect, useState } from "react";
 
 import Card from "@/components/tecs/Card";
-import Modal from "@/components/tecs/Modal";
 
 const imgs = [
   {
     id: 1,
-    img: "/img/facebook.png",
+    img: "/img/figma.svg",
     alt: "Facebook",
   },
   {
     id: 2,
-    img: "/img/discord.png",
+    img: "/img/firebase.svg",
     alt: "Discord",
   },
   {
     id: 3,
-    img: "/img/instagram.png",
+    img: "/img/illustrator.svg",
     alt: "Instagram",
   },
   {
     id: 4,
-    img: "/img/whatsapp.png",
+    img: "/img/motion.svg",
     alt: "WhatsApp",
   },
   {
     id: 5,
-    img: "/img/google.png",
+    img: "/img/reactjs.svg",
     alt: "Google",
   },
   {
     id: 6,
-    img: "/img/google_duo.png",
+    img: "/img/tailwind.svg",
     alt: "Google Duo",
   },
-  {
-    id: 7,
-    img: "/img/linkedin.png",
-    alt: "Linkedin",
-  },
-  {
-    id: 8,
-    img: "/img/netflix.png",
-    alt: "Netflix",
-  },
-  {
-    id: 9,
-    img: "/img/messenger.png",
-    alt: "Messenger",
-  },
-  { id: 10, img: "/img/spotify.png", alt: "Spotify" },
 ];
 
 const shuffleArray = (array) => {
@@ -143,16 +126,9 @@ const Board = () => {
 
   return (
     <>
-      {gameOver && (
-        <div className="fixed inset-0 bg-black opacity-50 z-10"></div>
-      )}
-
       <div className="relative  flex items-center ">
         <div className="mx-auto flex flex-col justify-center items-center">
-          {/* <h1 className="font-bold text-4xl my-8 text-center text-transparent bg-clip-text  bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl  ">
-            Memory Game
-          </h1> */}
-          <div className="grid grid-cols-4 justify-center items-center px-3 py-5 my-3">
+          <div className="grid md:grid-cols-4 grid-cols-3 justify-center items-center mb-10 gap-4">
             {cards.map((card) => (
               <Card
                 card={card}
@@ -168,12 +144,6 @@ const Board = () => {
             Nuevo Juego
           </button>
         </div>
-        <Modal
-          gameOver={gameOver}
-          setGameOver={setGameOver}
-          moves={moves}
-          handleNewGame={handleNewGame}
-        />
       </div>
     </>
   );

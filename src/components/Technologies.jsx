@@ -14,7 +14,7 @@ const Technologies = () => {
       viewport={{ once: false, amount: 0.25 }}
     >
       <Section
-        title="Testimonials 🛠"
+        title="Tecs 🛠"
         subtitle="This is what my other clients have to say about me. I accept clients from all around the world."
       >
         <Board />

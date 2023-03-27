@@ -15,7 +15,7 @@ const TechnologieCard = ({ id, imgUrl, title, index, active, handleClick }) => (
     {active !== id ? (
       ""
     ) : (
-      <div className="absolute bottom-0  ">
+      <div className="absolute bottom-[-20px] rounded-lg shadow-xl p-2 shadow-black dark:shadow-white  duration-200  ">
         <TitleText
           title={title}
           textStyles="font-semibold sm:text-[32px] text-[24px] dark:text-white "

@@ -25,16 +25,16 @@ const Hero = () => {
         title="Bryan Sañudo Garcia"
         textStyles="font-bold text-4xl my-8 text-center text-transparent bg-clip-text  bg-gradient-to-r from-[#29A52D] to-[#5C24B3] hover:from-pink-500 hover:to-yellow-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl"
       />
-      <TypingText title="Software " textStyles="py-3 text-2xl" />
+      <TypingText title="Software Engineer " textStyles="py-3 text-2xl" />
       <p className="max-w-xl font-light text-gray-500 mb-10">
         Hello <span className="animate-pulse text-4xl">👋</span>, welcome to my
-        site. I am a freelance software engineer. I love to work on Web Dev,
-        Mobile Dev & automation projects.
+        site. I Software developer with focus in UX/UI Design. I love to work on
+        Web Dev, Mobile Dev & automation projects.
       </p>
 
       <motion.div variants={zoomIn(0.4, 1)}>
         <a
-          href="/yash-resume.pdf"
+          href="/hdvBryan.pdf"
           download={true}
           className="flex items-center justify-center  bg-gradient-to-r from-[#29A52D] to-[#5C24B3] text-white py-2 rounded-lg mb-10 hover:scale-110 duration-300"
         >

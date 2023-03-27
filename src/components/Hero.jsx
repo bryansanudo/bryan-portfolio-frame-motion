@@ -1,29 +1,11 @@
 import React from "react";
-import { FaTwitter, FaFacebook, FaLinkedin, FaArrowDown } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
 import avatar from "@/assets/hero.svg";
 import { motion } from "framer-motion";
 import { TypingText } from "@/components/CustomTexts";
-import { fadeIn, staggerContainer, zoomIn } from "@/utils/motion";
+import { staggerContainer, zoomIn } from "@/utils/motion";
 
 const Hero = () => {
-  const SOCIAL = [
-    {
-      id: 1,
-      link: "https://twitter.com",
-      icon: <FaTwitter />,
-    },
-    {
-      id: 2,
-      link: "https://facebook.com",
-      icon: <FaFacebook />,
-    },
-    {
-      id: 3,
-      link: "https://linkedin.com",
-      icon: <FaLinkedin />,
-    },
-  ];
-
   window.addEventListener("scroll", function () {
     const downArrow = document.querySelector(".down-arrow");
 

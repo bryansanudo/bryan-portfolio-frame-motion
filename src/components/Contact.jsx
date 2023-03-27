@@ -1,7 +1,6 @@
 import React from "react";
 import Section from "@/components/common/Section";
-import { FaTwitter, FaFacebook, FaLinkedin, FaArrowDown } from "react-icons/fa";
-import contact from "@/assets/mobile.png";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import { motion } from "framer-motion";
 
@@ -12,12 +11,12 @@ const Contact = () => {
     {
       id: 1,
       link: "https://twitter.com",
-      icon: <FaTwitter />,
+      icon: <FaGithub />,
     },
     {
       id: 2,
       link: "https://facebook.com",
-      icon: <FaFacebook />,
+      icon: <FaInstagram />,
     },
     {
       id: 3,

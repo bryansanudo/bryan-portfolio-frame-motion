@@ -34,7 +34,7 @@ const Contact = () => {
     >
       <Section
         title="Contact"
-        subtitle=" I am open to talk regardin freelancing or full-time opportunities.
+        subtitle=" I am open to talk regardin half or full time opportunities.
         Feel Free to contact me using your preferred medium :)"
       >
         <div className="flex flex-col items-center justify-center gap-8 text-center">

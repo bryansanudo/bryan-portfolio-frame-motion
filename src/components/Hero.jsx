@@ -23,13 +23,13 @@ const Hero = () => {
     >
       <TypingText
         title="Bryan Sañudo Garcia"
-        textStyles="font-bold text-4xl my-8 text-center text-transparent bg-clip-text  bg-gradient-to-r from-[#29A52D] to-[#5C24B3] hover:from-pink-500 hover:to-yellow-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl"
+        textStyles="font-bold text-4xl my-8 text-center text-transparent bg-clip-text  bg-gradient-to-r from-[#29A52D] to-[#5C24B3] hover:from-[#5C24B3] hover:to-[#29A52D] transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl"
       />
       <TypingText title="Software Engineer " textStyles="py-3 text-2xl" />
       <p className="max-w-xl font-light text-gray-500 mb-10">
         Hello <span className="animate-pulse text-4xl">👋</span>, welcome to my
-        site. I Software developer with focus in UX/UI Design. I love to work on
-        Web Dev, Mobile Dev & automation projects.
+        site. I am frontend developer with focus in UX/UI Design. I love to work
+        on Web Dev.
       </p>
 
       <motion.div variants={zoomIn(0.4, 1)}>

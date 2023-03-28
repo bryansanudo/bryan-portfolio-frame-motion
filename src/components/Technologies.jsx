@@ -69,8 +69,8 @@ const Technologies = () => {
       viewport={{ once: false, amount: 0.25 }}
     >
       <Section
-        title="Portfolio"
-        subtitle="These are all the projects that I have worked on. Some of them I have worked before I gained some experience. So go gentle on them."
+        title="Technologies"
+        subtitle="He trabajado con una variedad de tecnologías y herramientas para desarrollar aplicaciones web interactivas y atractivas. A continuación, se muestran las tecnologías que he utilizado en los proyectos anteriores:"
       >
         <div className=" grid grid-cols-2 gap-5  lg:grid-cols-5 ">
           {tecs.map((world, index) => (

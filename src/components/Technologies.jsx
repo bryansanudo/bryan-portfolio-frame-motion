@@ -69,6 +69,7 @@ const Technologies = () => {
       viewport={{ once: false, amount: 0.25 }}
     >
       <Section
+        name="technologies"
         title="Technologies"
         subtitle="He trabajado con una variedad de tecnologías y herramientas para desarrollar aplicaciones web interactivas y atractivas. A continuación, se muestran las tecnologías que he utilizado en los proyectos anteriores:"
       >

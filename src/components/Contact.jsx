@@ -33,6 +33,7 @@ const Contact = () => {
       viewport={{ once: false, amount: 0.25 }}
     >
       <Section
+        name="contact"
         title="Contact"
         subtitle=" I am open to talk regardin half or full time opportunities.
         Feel Free to contact me using your preferred medium :)"

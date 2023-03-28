@@ -15,11 +15,12 @@ const Hero = () => {
 
   return (
     <motion.section
+      name="home"
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="min-h-screen flex flex-col justify-start items-center p-5 text-center"
+      className="min-h-screen flex flex-col justify-start items-center p-5 text-center pt-16"
     >
       <TypingText
         title="Bryan Sañudo Garcia"

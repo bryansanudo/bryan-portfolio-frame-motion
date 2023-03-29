@@ -49,7 +49,7 @@ const Contact = () => {
                 href={link}
                 target="_blank"
                 rel="noopener noreferrerr"
-                className="duration-500 hover:scale-150"
+                className="duration-500 hover:scale-150 "
               >
                 {icon}
               </a>

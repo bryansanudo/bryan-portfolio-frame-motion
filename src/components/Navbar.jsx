@@ -25,19 +25,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   ];
 
   return (
-    <nav className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-      <div className="fixed w-full h-16 bg-black text-white z-20  ">
-        <div className="flex justify-between  md:gap-5 items-center max-w-screen-xl mx-auto px-4 h-full">
-          <div onClick={() => setDarkMode(!darkMode)}>
-            {darkMode ? (
-              <MdWbSunny className="text-2xl cursor-pointer" />
-            ) : (
-              <MdNightsStay className="text-2xl cursor-pointer" />
-            )}
-          </div>
-
+    <>
+      <div className="fixed w-full h-16 bg-gray-900 text-white z-20  ">
+        <div className="flex justify-between  md:gap-5 items-center max-w-screen-xl mx-auto px-8 h-full">
           <div className="hidden lg:flex items-center">
-            <ul className="flex">
+            <ul className="flex ">
               {links.map(({ id, link }) => (
                 <Link key={id} to={link} smooth duration={500}>
                   <li className="p-4 uppercase duration-300 hover:text-thSecondary cursor-pointer">
@@ -56,17 +48,28 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           </div>
 
           <div className="flex items-center flex-row justify-center gap-2 ">
-            <a href="#" className="mr-5">
-              EN
+            <div onClick={() => setDarkMode(!darkMode)}>
+              {darkMode ? (
+                <MdWbSunny className="text-2xl cursor-pointer" />
+              ) : (
+                <MdNightsStay className="text-2xl cursor-pointer" />
+              )}
+            </div>
+            <a href="#">
+              <span>ENG</span>
             </a>
-            <a href="#">ESP</a>
+            <a href="#">
+              <span>ESP</span>
+            </a>
           </div>
         </div>
       </div>
 
       <div
         className={`fixed w-full  text-white z-10 left-0 h-fit py-12 lg:hidden flex justify-center text-center text-2xl duration-500 ${
-          isMenuShown ? "top-16 rounded-b-2xl opacity-95" : "top-[-100%]"
+          isMenuShown
+            ? "top-16 rounded-b-2xl bg-gray-900 opacity-95"
+            : "top-[-100%]"
         }`}
       >
         <ul>
@@ -85,7 +88,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           ))}
         </ul>
       </div>
-    </nav>
+    </>
   );
 };
 

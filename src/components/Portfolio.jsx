@@ -2,8 +2,8 @@ import React from "react";
 import Section from "@/components/common/Section";
 import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa";
 
-import p1 from "@/assets/p1.jpg";
-import p2 from "@/assets/p2.jpg";
+import p1 from "@/assets/p1.svg";
+import p2 from "@/assets/p2.svg";
 import p3 from "@/assets/p3.jpg";
 import p4 from "@/assets/p4.jpg";
 import p5 from "@/assets/p5.jpg";
@@ -29,30 +29,31 @@ const Portfolio = () => {
       github: "https://github.com",
       demo: "https://github.com",
     },
+
     {
       id: 3,
-      image: p3,
+      image: "https://i.ibb.co/W6YF1Bk/Captura-01.png",
       title: "Best App3",
       github: "https://github.com",
       demo: "https://github.com",
     },
     {
       id: 4,
-      image: p4,
+      image: "https://i.ibb.co/W6YF1Bk/Captura-01.png",
       title: "Best App4",
       github: "https://github.com",
       demo: "https://github.com",
     },
     {
       id: 5,
-      image: p5,
+      image: "https://i.ibb.co/W6YF1Bk/Captura-01.png",
       title: "Best App5",
       github: "https://github.com",
       demo: "https://github.com",
     },
     {
       id: 6,
-      image: p6,
+      image: "https://i.ibb.co/W6YF1Bk/Captura-01.png",
       title: "Best App6",
       github: "https://github.com",
       demo: "https://github.com",

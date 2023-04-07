@@ -12,11 +12,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     },
     {
       id: 2,
-      link: "technologies",
+      link: "portfolio",
     },
     {
       id: 3,
-      link: "portfolio",
+      link: "technologies",
     },
     {
       id: 4,

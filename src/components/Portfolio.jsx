@@ -17,98 +17,103 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      image: p1,
-      title: "Best App",
+      image: "https://i.ibb.co/GPqVW3w/adidas.png",
+      title: "Carrito de compras",
       github: "https://github.com",
       demo: "https://github.com",
     },
     {
       id: 2,
-      image: p2,
-      title: "Best App 2",
+
       github: "https://github.com",
+      image: "https://i.ibb.co/cxfYLGH/trivia.png",
+      title: "Trivia Game",
       demo: "https://github.com",
     },
 
     {
       id: 3,
-      image: "https://i.ibb.co/W6YF1Bk/Captura-01.png",
-      title: "Best App3",
+      image: "https://i.ibb.co/y4cPchh/ingravity.png",
+      title: "Ingravity Roller App",
       github: "https://github.com",
       demo: "https://github.com",
     },
     {
       id: 4,
-      image: "https://i.ibb.co/W6YF1Bk/Captura-01.png",
-      title: "Best App4",
+      image: "https://i.ibb.co/m4krpSw/sarazapata.png",
+      title: "Sara Zapata App",
       github: "https://github.com",
       demo: "https://github.com",
     },
     {
       id: 5,
-      image: "https://i.ibb.co/W6YF1Bk/Captura-01.png",
-      title: "Best App5",
+      image: "https://i.ibb.co/K0qkKfq/Pokedex.png",
+      title: "Pokedex App",
       github: "https://github.com",
       demo: "https://github.com",
     },
     {
       id: 6,
-      image: "https://i.ibb.co/W6YF1Bk/Captura-01.png",
-      title: "Best App6",
+      image: "https://i.ibb.co/4JtH7N5/memory.png",
+      title: "Memory Game",
+      github: "https://github.com",
+      demo: "https://github.com",
+    },
+    {
+      id: 7,
+      image: "https://i.ibb.co/bPSY15h/magrey.png",
+      title: "Magrey Barber",
+      github: "https://github.com",
+      demo: "https://github.com",
+    },
+    {
+      id: 8,
+      image: "https://i.ibb.co/9YjPQt2/wedding.png",
+      title: "Invitación de boda",
       github: "https://github.com",
       demo: "https://github.com",
     },
   ];
 
   return (
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+    <Section
+      name="portfolio"
+      title="Portfolio"
+      subtitle="These are all the projects that I have worked on. Some of them I have worked before I gained some experience. So go gentle on them."
     >
-      <Section
-        name="portfolio"
-        title="Portfolio"
-        subtitle="These are all the projects that I have worked on. Some of them I have worked before I gained some experience. So go gentle on them."
-      >
-        <motion.div
-          variants={fadeIn("right", "tween", 0.5, 1.5)}
-          className="grid gap-8 lg:gap-14 lg:grid-cols-2"
-        >
-          {projects.map(({ id, image, title, github, demo }) => (
+      <div className="grid gap-8 lg:gap-14 lg:grid-cols-2">
+        {projects.map(({ id, image, title, github, demo }) => (
+          <div
+            key={id}
+            className="max-w-lg flex shadow-lg shadow-gray-300 rounded-2xl overflow-hidden"
+          >
+            <img src={image} alt={title} className="w-2/3" />
             <div
-              key={id}
-              className="max-w-lg flex shadow-lg shadow-gray-300 rounded-2xl overflow-hidden"
+              variants={zoomIn(1, 1)}
+              className="w-1/3 flex flex-col items-center justify-evenly p-1"
             >
-              <img src={image} alt={title} className="w-2/3" />
-              <motion.div
-                variants={zoomIn(1, 1)}
-                className="w-1/3 flex flex-col items-center justify-evenly p-1"
+              <h2>{title}</h2>
+              <a
+                href={github}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-2xl cursor-pointer duration-150 hover:scale-110"
               >
-                <h2>{title}</h2>
-                <a
-                  href={github}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="text-2xl cursor-pointer duration-150 hover:scale-110"
-                >
-                  <FaGithub />
-                </a>
-                <a
-                  href={demo}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="text-2xl cursor-pointer duration-150 hover:scale-110"
-                >
-                  <FaExternalLinkSquareAlt />
-                </a>
-              </motion.div>
+                <FaGithub />
+              </a>
+              <a
+                href={demo}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-2xl cursor-pointer duration-150 hover:scale-110"
+              >
+                <FaExternalLinkSquareAlt />
+              </a>
             </div>
-          ))}
-        </motion.div>
-      </Section>
-    </motion.div>
+          </div>
+        ))}
+      </div>
+    </Section>
   );
 };
 

@@ -2,8 +2,8 @@ import React from "react";
 import { FaArrowDown } from "react-icons/fa";
 import avatar from "@/assets/hero.svg";
 import { motion } from "framer-motion";
-import { TypingText } from "@/components/CustomTexts";
 import { staggerContainer, zoomIn } from "@/utils/motion";
+import { TypingText } from "@/components/CustomTexts";
 
 const Hero = () => {
   window.addEventListener("scroll", function () {

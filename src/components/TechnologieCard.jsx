@@ -7,7 +7,7 @@ import { TitleText } from "@/components/CustomTexts";
 
 const TechnologieCard = ({ id, imgUrl, title, index, active, handleClick }) => (
   <motion.div
-    variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+    variants={fadeIn("right", "spring", 1, 2.5)}
     className={`relative  flex items-center justify-center  cursor-pointer  `}
     onMouseOver={() => handleClick(id)}
   >

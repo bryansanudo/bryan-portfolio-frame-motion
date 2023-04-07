@@ -32,7 +32,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <ul className="flex ">
               {links.map(({ id, link }) => (
                 <Link key={id} to={link} smooth duration={500}>
-                  <li className="p-4 uppercase duration-300 hover:text-thSecondary cursor-pointer">
+                  <li className="p-4 uppercase duration-300 hover:text-[#29A52D] hover:scale-110 cursor-pointer">
                     {link}
                   </li>
                 </Link>
@@ -50,16 +50,16 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           <div className="flex items-center flex-row justify-center gap-2 ">
             <div onClick={() => setDarkMode(!darkMode)}>
               {darkMode ? (
-                <MdWbSunny className="text-2xl cursor-pointer" />
+                <MdWbSunny className="text-2xl cursor-pointer hover:text-[#29A52D] duration-300" />
               ) : (
-                <MdNightsStay className="text-2xl cursor-pointer" />
+                <MdNightsStay className="text-2xl cursor-pointer hover:text-[#29A52D] duration-300" />
               )}
             </div>
             <a href="#">
-              <span>ENG</span>
+              <span className="hover:text-[#29A52D] duration-300">ENG</span>
             </a>
             <a href="#">
-              <span>ESP</span>
+              <span className="hover:text-[#29A52D] duration-300">ESP</span>
             </a>
           </div>
         </div>

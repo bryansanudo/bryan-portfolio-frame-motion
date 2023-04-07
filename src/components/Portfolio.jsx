@@ -97,7 +97,7 @@ const Portfolio = () => {
                 href={github}
                 rel="noopener noreferrer"
                 target="_blank"
-                className="text-2xl cursor-pointer duration-150 hover:scale-110"
+                className="text-2xl cursor-pointer duration-300  hover:scale-125"
               >
                 <FaGithub />
               </a>
@@ -105,9 +105,9 @@ const Portfolio = () => {
                 href={demo}
                 rel="noopener noreferrer"
                 target="_blank"
-                className="text-2xl cursor-pointer duration-150 hover:scale-110"
+                className="text-2xl cursor-pointer duration-300 animate-pulse hover:scale-125"
               >
-                <FaExternalLinkSquareAlt />
+                <FaExternalLinkSquareAlt className="" />
               </a>
             </div>
           </div>

@@ -11,59 +11,59 @@ const Portfolio = () => {
       id: 1,
       image: "https://i.ibb.co/Hp9gLT6/adidas-01.png",
       title: "Carrito de compras",
-      github: "https://github.com",
-      demo: "https://github.com",
+      github: "https://github.com/bryansanudo/ecommerce-adidas",
+      demo: "https://bryan95-adidas.vercel.app/",
     },
     {
       id: 2,
 
-      github: "https://github.com",
+      github: "https://github.com/bryansanudo/trivia-game",
       image: "https://i.ibb.co/9bTBMt2/trivia-01.png",
       title: "Trivia Game",
-      demo: "https://github.com",
+      demo: "https://bryan95-trivia.vercel.app/",
     },
 
     {
       id: 3,
       image: "https://i.ibb.co/1vhvqRJ/ingravity-App-01.png",
       title: "Ingravity Roller App",
-      github: "https://github.com",
-      demo: "https://github.com",
+      github: "https://github.com/bryansanudo/ingravityV2",
+      demo: "https://ingravity.vercel.app/",
     },
     {
       id: 4,
       image: "https://i.ibb.co/bQynG3J/sara-App-01.png",
       title: "Sara Zapata App",
-      github: "https://github.com",
-      demo: "https://github.com",
+      github: "https://github.com/bryansanudo/saraZapata",
+      demo: "https://sarazapata.vercel.app/",
     },
     {
       id: 5,
       image: "https://i.ibb.co/WWmJnkC/Pokedex-App-01.png",
       title: "Pokedex App",
-      github: "https://github.com",
-      demo: "https://github.com",
+      github: "https://github.com/bryansanudo/pokedex",
+      demo: "https://bryan95-pokedex.vercel.app/",
     },
     {
       id: 6,
       image: "https://i.ibb.co/YQZvFHZ/memory-01.png",
       title: "Memory Game",
-      github: "https://github.com",
-      demo: "https://github.com",
+      github: "https://github.com/bryansanudo/memory-game",
+      demo: "https://bryan95-memory.vercel.app/",
     },
     {
       id: 7,
       image: "https://i.ibb.co/VQkvy8f/magrey-Barber-01.png",
       title: "Magrey Barber",
-      github: "https://github.com",
-      demo: "https://github.com",
+      github: "https://github.com/brsanudo/magrey",
+      demo: "https://magrey.vercel.app/",
     },
     {
       id: 8,
       image: "https://i.ibb.co/YZZvxYS/wedding-01.png",
       title: "Invitación de boda",
-      github: "https://github.com",
-      demo: "https://github.com",
+      github: "https://github.com/bryansanudo/deivisysorany2",
+      demo: "https://deivissorany2.vercel.app/",
     },
   ];
 
@@ -88,7 +88,7 @@ const Portfolio = () => {
             >
               <img src={image} alt={title} className="w-2/3" />
               <div className="w-1/3 flex flex-col items-center justify-evenly p-1">
-                <h2>{title}</h2>
+                <h2 className="font-medium ">{title}</h2>
                 <a
                   href={github}
                   rel="noopener noreferrer"

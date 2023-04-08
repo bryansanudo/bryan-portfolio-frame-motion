@@ -10,17 +10,17 @@ const Contact = () => {
   const SOCIAL = [
     {
       id: 1,
-      link: "https://twitter.com",
+      link: "https://github.com/bryansanudo",
       icon: <FaGithub />,
     },
     {
       id: 2,
-      link: "https://facebook.com",
+      link: "https://www.instagram.com/bryan_sanudo/",
       icon: <FaInstagram />,
     },
     {
       id: 3,
-      link: "https://linkedin.com",
+      link: "https://www.linkedin.com/in/bryan-sa%C3%B1udo-garcia-299923271/",
       icon: <FaLinkedin />,
     },
   ];

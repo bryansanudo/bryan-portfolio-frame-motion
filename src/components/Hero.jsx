@@ -35,7 +35,7 @@ const Hero = () => {
 
       <motion.div variants={zoomIn(0.4, 1)}>
         <a
-          href="/hdvBryan.pdf"
+          href="/hdvBryanEng.pdf"
           download={true}
           className="flex items-center justify-center  bg-gradient-to-r from-[#29A52D] to-[#5C24B3] text-white py-2 rounded-lg mb-10 hover:scale-110 duration-300"
         >

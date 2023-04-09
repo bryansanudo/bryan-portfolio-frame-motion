@@ -55,10 +55,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 <MdNightsStay className="text-2xl cursor-pointer hover:text-[#29A52D] duration-300" />
               )}
             </div>
-            <a href="#">
+            <a href="https://bryan95-portfolio.vercel.app/">
               <span className="hover:text-[#29A52D] duration-300">ENG</span>
             </a>
-            <a href="#">
+            <a href="https://bryan95-portfolio-esp.vercel.app/">
               <span className="hover:text-[#29A52D] duration-300">ESP</span>
             </a>
           </div>

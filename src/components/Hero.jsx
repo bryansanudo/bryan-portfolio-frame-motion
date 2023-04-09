@@ -29,8 +29,8 @@ const Hero = () => {
       <TypingText title="Software Engineer " textStyles="py-3 text-2xl" />
       <p className="max-w-xl font-light text-gray-500 mb-10">
         Hello <span className="animate-pulse text-4xl">👋</span>, welcome to my
-        site. I am frontend developer with focus in UX/UI Design. I love to work
-        on Web Dev.
+        site. I am frontend developer with emphasis in UX/UI Design. I love to
+        work on Web dev.
       </p>
 
       <motion.div variants={zoomIn(0.4, 1)}>

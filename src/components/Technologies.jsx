@@ -71,7 +71,7 @@ const Technologies = () => {
       <Section
         name="technologies"
         title="Technologies"
-        subtitle="I have worked with a variety of technologies and tools to develop interactive and engaging web applications."
+        subtitle="These are the technologies and tools I use to develop interactive and engaging web applications."
       >
         <div className=" grid grid-cols-2 gap-5  lg:grid-cols-5 ">
           {tecs.map((world, index) => (

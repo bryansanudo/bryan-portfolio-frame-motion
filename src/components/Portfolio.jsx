@@ -10,7 +10,7 @@ const Portfolio = () => {
     {
       id: 1,
       image: "https://i.ibb.co/Hp9gLT6/adidas-01.png",
-      title: "Carrito de compras",
+      title: "E-commerce",
       github: "https://github.com/bryansanudo/ecommerce-adidas",
       demo: "https://bryan95-adidas.vercel.app/",
     },
@@ -61,7 +61,7 @@ const Portfolio = () => {
     {
       id: 8,
       image: "https://i.ibb.co/YZZvxYS/wedding-01.png",
-      title: "Invitación de boda",
+      title: "Wedding invitation",
       github: "https://github.com/bryansanudo/deivisysorany2",
       demo: "https://deivissorany2.vercel.app/",
     },
